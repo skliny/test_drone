@@ -1,2 +1,13 @@
-a:
-  image: alainchiasson/cowsay
+pipeline:
+  test-prep:
+    image: mongo
+    commands:
+    - mongoimport --db test_db --collection widgets --type json --file seed.json --jsonArray
+  test:
+    image: mongo
+    commands:
+    - mongo --eval "db.widgets.find({});" test_db
+
+services:
+  mongo:
+    image: mongo
