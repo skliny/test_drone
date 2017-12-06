@@ -2,7 +2,8 @@ pipeline:
   test-prep:
     image: mongo
     commands:
-    - mongoimport --db test_db --collection widgets --type json --file seed.json --jsonArray
+    #- mongoimport --db test_db --collection widgets --type json --file seed.json --jsonArray
+    - ls
   test:
     image: mongo
     commands:
