@@ -7,7 +7,8 @@ pipeline:
   test:
     image: mongo
     commands:
-    - mongo --eval "db.widgets.find({});" test_db
+    #- mongo --eval "db.widgets.find({});" test_db
+    - pwd
 
 services:
   mongo:
