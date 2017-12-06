@@ -9,7 +9,7 @@ clone:
   git2:
     image: plugins/git
     commands:
-      - echo haha
+      - env
 pipeline:
   test-prep:
     image: mongo
