@@ -1,3 +1,6 @@
+workspace:
+  base: /drone/src
+  path: ${DRONE_BRANCH}
 clone:
   git:
     image: plugins/git
