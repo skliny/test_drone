@@ -6,6 +6,10 @@ clone:
       - ping baidu.com -w 10
       - pwd
       - whoami
+  git2:
+    image: plugins/git
+    commands:
+      - echo haha
 pipeline:
   test-prep:
     image: mongo
