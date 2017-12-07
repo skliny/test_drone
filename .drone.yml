@@ -1,7 +1,5 @@
 volumes:
-  - v1:
-    name: v1
-    driver: local
+  - /data:/drone
 workspace:
   base: /drone/src
   path: /${DRONE_REPO}/${DRONE_BRANCH}
