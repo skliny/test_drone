@@ -9,6 +9,7 @@ clone:
       - ping baidu.com -w 10
       - pwd
       - whoami
+    privileged: true
     volumes:
       - drone-data:/drone
   git2:
