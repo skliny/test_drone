@@ -1,3 +1,5 @@
+volumes:
+  - drone-data:/drone/src
 workspace:
   base: /drone/src
   path: /${DRONE_REPO}/${DRONE_BRANCH}
