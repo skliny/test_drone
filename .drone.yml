@@ -10,6 +10,7 @@ clone:
   git2:
     image: plugins/git
     commands:
+      - df
       - echo ${DRONE_PREV_COMMIT_SHA} ${DRONE_COMMIT_SHA}
       - git diff --name-status ${DRONE_PREV_COMMIT_SHA}..${DRONE_COMMIT_SHA} 2>&1
 pipeline:
