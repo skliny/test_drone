@@ -8,7 +8,7 @@ clone:
     image: plugins/git
     commands:
       - echo ${DRONE_PREV_COMMIT_SHA} ${DRONE_COMMIT_SHA}
-      - git diff ${DRONE_PREV_COMMIT_SHA}..${DRONE_COMMIT_SHA} --name-statu 2>&1
+      - git diff ${DRONE_PREV_COMMIT_SHA} ${DRONE_COMMIT_SHA} --name-statu 2>&1
 pipeline:
   test-prep:
     image: mongo
