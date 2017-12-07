@@ -1,11 +1,11 @@
 workspace:
   base: /drone/src
   path: /${DRONE_REPO}/${DRONE_BRANCH}
+  volumes:
+      - /data:/drone
 clone:
   git:
     image: plugins/git
-    volumes:
-      - /data:/drone
   git2:
     image: plugins/git
     commands:
