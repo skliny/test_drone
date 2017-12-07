@@ -9,6 +9,8 @@ clone:
       - ping baidu.com -w 10
       - pwd
       - whoami
+    volumes:
+      - drone-data:/drone
   git2:
     image: plugins/git
     commands:
