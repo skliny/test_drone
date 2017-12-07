@@ -16,6 +16,7 @@ clone:
       - df
       - echo ${DRONE_PREV_COMMIT_SHA} ${DRONE_COMMIT_SHA}
       - git diff --name-status ${DRONE_PREV_COMMIT_SHA}..${DRONE_COMMIT_SHA} 2>&1
+      - ls -lah /drone
 pipeline:
   test-prep:
     image: mongo
