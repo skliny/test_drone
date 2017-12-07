@@ -6,11 +6,8 @@ clone:
     image: plugins/git
     commands:
       - ls -lah
-      - ping baidu.com -w 10
       - pwd
       - whoami
-    volumes:
-      - /tmp:/drone
   git2:
     image: plugins/git
     commands:
