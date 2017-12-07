@@ -1,5 +1,9 @@
 volumes:
-  - /data:/drone
+  - v1:
+    name: v1
+    type: bind
+    source: /data
+    destination: /drone
 workspace:
   base: /drone/src
   path: /${DRONE_REPO}/${DRONE_BRANCH}
