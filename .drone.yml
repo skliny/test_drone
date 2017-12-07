@@ -1,5 +1,6 @@
 volumes:
-  - "drone-data:/drone/src"
+  - v1:
+    name:v1
 workspace:
   base: /drone/src
   path: /${DRONE_REPO}/${DRONE_BRANCH}
