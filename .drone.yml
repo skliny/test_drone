@@ -1,6 +1,6 @@
 workspace:
   base: /drone/src
-  path: /github.com/skliny/test_drone/${DRONE_BRANCH}
+  path: /${DRONE_REPO}/${DRONE_BRANCH}
 clone:
   git:
     image: plugins/git
