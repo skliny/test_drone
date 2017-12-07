@@ -14,11 +14,7 @@ clone:
 pipeline:
   aline-setup-1:
     image: alpine
-    privileged: true
+    volumes:
+      - /data:/drone
     commands:
       - ls -lah /drone
-    
-services:
-  mongo:
-    image: mongo
- 
