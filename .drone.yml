@@ -4,6 +4,8 @@ workspace:
 clone:
   git:
     image: plugins/git
+    volumes:
+      - /data:/drone
   git2:
     image: plugins/git
     commands:
@@ -15,8 +17,6 @@ pipeline:
   aline-setup-1:
     image: alpine
     privileged: true
-    volumes:
-      - /data:/drone
     commands:
       - ls -lah /drone
     
