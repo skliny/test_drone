@@ -1,5 +1,5 @@
 workspace:
-  base: /data:/drone/src
+  base: /drone/src
   path: /${DRONE_REPO}/${DRONE_BRANCH}
 clone:
   git:
