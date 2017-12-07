@@ -1,8 +1,6 @@
 workspace:
-  base: /drone/src
+  base: /data:/drone/src
   path: /${DRONE_REPO}/${DRONE_BRANCH}
-  volumes:
-      - /data:/drone
 clone:
   git:
     image: plugins/git
