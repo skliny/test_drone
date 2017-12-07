@@ -6,6 +6,7 @@ clone:
     image: plugins/git
     commands:
       - ls -lah
+      - df
       - pwd
       - whoami
   git2:
