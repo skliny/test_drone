@@ -8,3 +8,13 @@ echo "Press enter to continue"
 read junk
 
 drone exec
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
